@@ -18,6 +18,7 @@ jobs:
           git config user.email github-actions@github.com   
       - name: Update branch      
         run: |
+          git fetch
           git checkout pack_1-19-4
           git merge origin/main
       - name: Replace pack meta
