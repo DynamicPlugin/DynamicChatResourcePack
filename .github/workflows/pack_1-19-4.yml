@@ -20,8 +20,7 @@ jobs:
         run: |
           git fetch
           git checkout pack_1-19-4
-          git merge -X theirs main --allow-unrelated-histories
-          git reset pack_1-19-4 --hard
+          git branch -f pack_1-19-4 main
       - name: Replace pack meta
         run: |
           cd pack
