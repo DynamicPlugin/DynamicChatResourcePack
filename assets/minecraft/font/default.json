@@ -1,0 +1,113 @@
+{
+    "providers": [
+        {
+            "type": "space",
+            "advances": {
+                "\ud500": -1,
+                "\uc500": 1,
+                "\ud501": -2,
+                "\uc501": 2,
+                "\ud502": -3,
+                "\uc502": 3,
+                "\ud503": -4,
+                "\uc503": 4,
+                "\ud504": -5,
+                "\uc504": 5,
+                "\ud505": -6,
+                "\uc505": 6,
+                "\ud506": -7,
+                "\uc506": 7,
+                "\ud507": -8,
+                "\uc507": 8,
+                "\ud508": -9,
+                "\uc508": 9,
+                "\ud509": -10,
+                "\uc509": 10,
+                "\ud50a": -11,
+                "\uc50a": 11,
+                "\ud50b": -12,
+                "\uc50b": 12,
+                "\ud50c": -13,
+                "\uc50c": 13,
+                "\ud50d": -14,
+                "\uc50d": 14,
+                "\ud50e": -15,
+                "\uc50e": 15,
+                "\ud50f": -16,
+                "\uc50f": 16,
+                "\ud510": -17,
+                "\uc510": 17,
+                "\ud511": -18,
+                "\uc511": 18,
+                "\ud512": -19,
+                "\uc512": 19,
+                "\ud513": -20,
+                "\uc513": 20
+            }
+        },
+        {
+            "type": "bitmap",
+            "file": "minecraft:font/pixel.png",
+            "ascent": "0",
+            "chars": [
+                "\ue500"
+            ]
+        },
+        {
+            "type": "bitmap",
+            "file": "minecraft:font/pixel.png",
+            "ascent": "1",
+            "chars": [
+                "\ue501"
+            ]
+        },
+        {
+            "type": "bitmap",
+            "file": "minecraft:font/pixel.png",
+            "ascent": "2",
+            "chars": [
+                "\ue502"
+            ]
+        },
+        {
+            "type": "bitmap",
+            "file": "minecraft:font/pixel.png",
+            "ascent": "3",
+            "chars": [
+                "\ue503"
+            ]
+        },
+        {
+            "type": "bitmap",
+            "file": "minecraft:font/pixel.png",
+            "ascent": "4",
+            "chars": [
+                "\ue504"
+            ]
+        },
+        {
+            "type": "bitmap",
+            "file": "minecraft:font/pixel.png",
+            "ascent": "5",
+            "chars": [
+                "\ue505"
+            ]
+        },
+        {
+            "type": "bitmap",
+            "file": "minecraft:font/pixel.png",
+            "ascent": "6",
+            "chars": [
+                "\ue506"
+            ]
+        },
+        {
+            "type": "bitmap",
+            "file": "minecraft:font/pixel.png",
+            "ascent": "7",
+            "chars": [
+                "\ue507"
+            ]
+        }
+    ]
+}
