@@ -1,0 +1,38 @@
+name: pack_1-19-4
+
+on:
+  push:
+    branches: [ "main" ]
+
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Setup git credentials     
+        run: |
+          date > generated.txt
+          git config user.name github-actions
+          git config user.email github-actions@github.com   
+      - name: Update branch      
+        run: |
+          git checkout main
+          git branch pack_1-19-4
+          git fetch --all
+          git reset --hard origin/main
+      - name: Replace pack meta
+        run: |
+          cd pack
+          sed 's/%format%/12' pack.mcmeta
+      - name: Zip pack
+        run: |
+          zip ../pack.zip -r .
+      - name: Commit pack
+        run: |
+          cd ../
+          git add .
+          git commit -m "updated pack"
+          git push --force
