@@ -20,7 +20,7 @@ jobs:
         run: |
           git fetch
           git checkout pack_1-19-4
-          git merge -s theirs main
+          git merge -X theirs main
       - name: Replace pack meta
         run: |
           cd pack
