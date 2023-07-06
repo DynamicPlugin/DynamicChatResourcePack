@@ -21,6 +21,7 @@ jobs:
           git fetch
           git checkout pack_1-19-4
           git merge -X theirs main --allow-unrelated-histories
+          git reset pack_1-19-4 --hard
       - name: Replace pack meta
         run: |
           cd pack
