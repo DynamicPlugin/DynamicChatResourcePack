@@ -30,10 +30,10 @@ jobs:
           rm _pack.mcmeta
       - name: Zip pack
         run: |
+          cd pack
           zip ../pack.zip -r .
       - name: Commit pack
         run: |
-          cd ../
           git add .
           git commit -m "updated pack"
           git push --force
