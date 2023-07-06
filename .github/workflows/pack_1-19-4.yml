@@ -7,6 +7,9 @@ on:
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
 
+env:
+  packFormat: Monday
+
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -24,7 +27,7 @@ jobs:
       - name: Replace pack meta
         run: |
           cd pack
-          sed 's/packFormatToReplace/12/' _pack.mcmeta > pack.mcmeta
+          sed 's/packFormatToReplace/$packFormat/' _pack.mcmeta > pack.mcmeta
           rm _pack.mcmeta
       - name: Zip pack
         run: |
