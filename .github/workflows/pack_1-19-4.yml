@@ -8,7 +8,7 @@ on:
   workflow_dispatch:
 
 env:
-  packFormat: 12
+  packFormat: Monday
 
 jobs:
   build:
