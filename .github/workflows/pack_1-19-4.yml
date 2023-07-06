@@ -26,7 +26,8 @@ jobs:
       - name: Replace pack meta
         run: |
           cd pack
-          sed 's/%format%/12' pack.mcmeta
+          sed 's/packFormatToReplace/12/' _pack.mcmeta > pack.mcmeta
+          rm _pack.mcmeta
       - name: Zip pack
         run: |
           zip ../pack.zip -r .
