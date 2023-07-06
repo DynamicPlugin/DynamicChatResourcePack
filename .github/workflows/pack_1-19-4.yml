@@ -19,8 +19,8 @@ jobs:
       - name: Update branch      
         run: |
           git fetch
-          git checkout pack_1-19-4
           git branch -f pack_1-19-4 main
+          git checkout pack_1-19-4
       - name: Replace pack meta
         run: |
           cd pack
@@ -34,4 +34,4 @@ jobs:
         run: |
           git add .
           git commit -m "updated pack"
-          git push --force
+          git push -f origin pack_1-19-4 main
