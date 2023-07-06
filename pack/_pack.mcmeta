@@ -1,6 +1,6 @@
 {
   "pack": {
-    "pack_format": %format%,
+    "pack_format": packFormatToReplace,
 	"description", "DynamicChat resource pack"
   }
 }
